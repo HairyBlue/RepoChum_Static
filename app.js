@@ -19,7 +19,7 @@ window.addEventListener("load", async () => {
         {
           headers: {
             Accept: "application/vnd.github+json",
-            Authorization: "Bearer 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",
+            Authorization: "Bearer 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",
             "X-GitHub-Api-Version": "2022-11-28",
           },
         }
@@ -85,9 +85,9 @@ window.addEventListener("load", async () => {
   }
 });
 
-const trash = document.querySelector("#trash")
+const trash = document.querySelector("#trash");
 
 trash.addEventListener("click", () => {
-    localStorage.clear("github_user")
-    window.location.reload()
-})
+  localStorage.clear("github_user");
+  window.location.reload();
+});
