@@ -383,21 +383,116 @@ iconify-icon:hover {
     font-size: var(--fs-md);
     margin: 0;
   }
+
+  /* ******************** container__form ******************* */
+  .container__form {
+    font-size: var(--fs-base);
+    width: 90%;
+    height: 400px;
+    padding: 8px;
+    margin-top: 32px;
+  }
+  .container__form > form {
+    height: 60%;
+  }
+
+  /* ******************** container__token ******************* */
+  .container__token {
+    font-size: var(--fs-base);
+    width: 90%;
+    height: 400px;
+    background-color: var(--color-box);
+    padding: 8px;
+    margin-top: 128px;
+  }
+  .container__token > form > label {
+    text-align: center;
+  }
+  .container__token > button {
+    font-size: var(--fs-md);
+    margin-top: 150px;
+  }
 }
 
 @media (min-width: 446px) and (max-width: 556px) {
   .container__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* ******************** container__form ******************* */
+  .container__form {
+    font-size: var(--fs-md);
+    width: 90%;
+    height: 600px;
+    padding: 16px;
+    margin-top: 128px;
+  }
+  .container__form > form {
+    height: 70%;
+  }
+
+  /* ******************** container__token ******************* */
+  .container__token {
+    font-size: var(--fs-md);
+    width: 90%;
+    height: 450px;
+    background-color: var(--color-box);
+    padding: 8px;
+    margin-top: 128px;
+  }
+  .container__token > form > label {
+    text-align: center;
+  }
+  .container__token > button {
+    font-size: var(--fs-lg);
+    margin-top: 100px;
+  }
 }
+
 @media (min-width: 557px) and (max-width: 768px) {
   .container__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ******************** container__form ******************* */
+  .container__form {
+    font-size: var(--fs-md);
+    width: 90%;
+    height: 600px;
+    padding: 16px;
+    margin-top: 128px;
+  }
+  .container__form > form {
+    height: 70%;
+  }
+
+  /* ******************** container__token ******************* */
+  .container__token {
+    width: 90%;
+    height: 400px;
+    background-color: var(--color-box);
+    padding: 16px;
+    margin-top: 128px;
+  }
+  .container__token > button {
+    margin-top: 150px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {
   .container__grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* ******************** container__form ******************* */
+  .container__form {
+    font-size: var(--fs-md);
+    width: 90%;
+    height: 600px;
+    padding: 32px;
+    margin-top: 128px;
+  }
+  .container__form > form {
+    height: 80%;
   }
 }
