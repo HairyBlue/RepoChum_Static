@@ -12,6 +12,9 @@
       <div class="container__userlist">
         <div class="container__grid">
           <!-- <div>
+            <div class="container__checkbox">
+              <input type="checkbox" class="checkbox-delete"/>
+            </div>
             <div class="container__grid--profile">
               <div class="container__grid--img">
                 <img
@@ -30,16 +33,32 @@
                 >
               </p>
             </div>
+          </div> -->
+          <!-- <div>
+            <div class="container__checkbox">
+              <input type="checkbox" />
+            </div>
           </div>
-          <div></div>
-          <div></div>
-          <div></div> -->
+          <div>
+            <div class="container__checkbox">
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div>
+            <div class="container__checkbox">
+              <input type="checkbox" />
+            </div>
+          </div> -->
         </div>
-
       </div>
 
       <!-- container__action -->
       <div class="container__menu">
+        <div class="container__menu--file">
+           <!-- <a id="export">export file</a> -->
+           <a href="#" id="import">import file</a>
+           <input type="file" id="hiddenFileInput" accept=".json" style="display: none;">
+        </div>
         <div class="container__menu--action">
           <a href="./page/register/form.html">
             <iconify-icon
@@ -54,12 +73,18 @@
             width="40"
             height="40"
           ></iconify-icon>
-          <iconify-icon icon="mdi:trash" width="40" height="40" id="trash"></iconify-icon>
+          <iconify-icon
+            icon="mdi:trash"
+            width="40"
+            height="40"
+            id="trash"
+          ></iconify-icon>
         </div>
       </div>
     </div>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./tokenValidation.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

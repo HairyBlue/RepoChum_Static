@@ -168,6 +168,7 @@ body {
   padding: 24px;
 }
 .container__grid > div {
+  position: relative;
   max-width: 100%;
   height: 300px;
   padding: 8px;
@@ -175,6 +176,17 @@ body {
   border-radius: 8px;
   overflow: hidden; /* Hide overflow content */
   white-space: nowrap;
+}
+.container__checkbox{
+position: absolute;
+top: 0;
+right: 8px;
+height: 0;
+}
+.container__checkbox > input{
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
 }
 .container__grid > div > p {
   text-align: center;
@@ -205,16 +217,23 @@ body {
 
 .container__menu {
   position: fixed;
+  display: flex;
   width: 100%;
   height: 5vh;
 }
-
+.container__menu--file{
+ margin-left: 8px;
+}
+.container__menu--file > a{
+  margin-right: 8px;
+}
 .container__menu--action {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 40%;
-  margin: 0 auto;
+  margin-left: 20%;
+  /* margin: 0 auto; */
 }
 iconify-icon {
   color: #082f49;
@@ -303,7 +322,24 @@ iconify-icon:hover {
   font-size: var(--fs-lg);
   margin-left: 24px;
 }
+/* ******************** container__token ******************* */
+.container__token {
+  font-size: var(--fs-md);
+  width: 60%;
+  height: 600px;
+  background-color: var(--color-box);
+  padding: 64px;
+  margin: 0 auto;
+  margin-top: 128px;
+}
 
+.container__token > button {
+  font-size: var(--fs-lg);
+  margin-top: 200px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+}
 /* ******************** media__query ******************* */
 
 @media (min-width: 280px) and (max-width: 445px) {
@@ -346,14 +382,12 @@ iconify-icon:hover {
     font-size: var(--fs-md);
     margin: 0;
   }
-
 }
 
 @media (min-width: 446px) and (max-width: 556px) {
   .container__grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 @media (min-width: 557px) and (max-width: 768px) {
   .container__grid {

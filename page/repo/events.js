@@ -12,6 +12,7 @@ const containerEventContent = document.querySelector(
 const containerList = document.querySelector(".container__list");
 
 window.addEventListener("load", () => {
+  const token = localStorage.getItem("github_api_token");
   parseData.forEach(async (userItem, index) => {
     if (key == index) {
       username.textContent = userItem.username;
@@ -25,7 +26,7 @@ window.addEventListener("load", () => {
           {
             headers: {
               Accept: "application/vnd.github+json",
-              Authorization: "Bearer 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",
+              Authorization: `Bearer ${token}`,
               "X-GitHub-Api-Version": "2022-11-28",
             },
           }
