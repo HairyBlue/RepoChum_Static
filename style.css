@@ -213,7 +213,7 @@ height: 0;
   padding: 8px;
 }
 
-/* ******************** container__action ******************* */
+/* ******************** container__menu ******************* */
 
 .container__menu {
   position: fixed;
@@ -222,6 +222,7 @@ height: 0;
   height: 5vh;
 }
 .container__menu--file{
+  font-weight: 600;
  margin-left: 8px;
 }
 .container__menu--file > a{
