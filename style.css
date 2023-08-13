@@ -177,13 +177,13 @@ body {
   overflow: hidden; /* Hide overflow content */
   white-space: nowrap;
 }
-.container__checkbox{
-position: absolute;
-top: 0;
-right: 8px;
-height: 0;
+.container__checkbox {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  height: 0;
 }
-.container__checkbox > input{
+.container__checkbox > input {
   width: 20px;
   height: 20px;
   border-radius: 50px;
@@ -221,11 +221,11 @@ height: 0;
   width: 100%;
   height: 5vh;
 }
-.container__menu--file{
+.container__menu--file {
   font-weight: 600;
- margin-left: 8px;
+  margin-left: 8px;
 }
-.container__menu--file > a{
+.container__menu--file > a {
   margin-right: 8px;
 }
 .container__menu--action {
