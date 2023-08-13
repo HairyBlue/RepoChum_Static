@@ -164,8 +164,15 @@ window.addEventListener("load", async () => {
 
       reader.onload = (event) => {
         const uploadedJsonString = event.target.result;
-        localStorage.setItem("github_user", uploadedJsonString);
-        // const uploadedData = JSON.parse(uploadedJsonString);
+        if (localData.length !== 0) {
+          let insertData = [...localData];
+
+          const uploadedData = JSON.parse(uploadedJsonString);
+          insertData.push(...uploadedData);
+          localStorage.setItem("github_user", JSON.stringify(insertData));
+        } else {
+          localStorage.setItem("github_user", uploadedJsonString);
+        }
         window.location.reload();
       };
     }
