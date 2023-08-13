@@ -222,7 +222,7 @@ body {
   height: 5vh;
 }
 .container__menu--file {
-  font-weight: 600;
+  font-weight: 800;
   margin-left: 8px;
 }
 .container__menu--file > a {
